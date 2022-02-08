@@ -5,7 +5,8 @@
 Приклад запуску:
 
 
-![image](https://user-images.githubusercontent.com/91615532/152966124-624296ed-0ec6-45e6-a249-3c1488d7967c.png)
+![Terminal](https://user-images.githubusercontent.com/91615532/152968361-16a0dc62-b812-424b-bffb-8bfcdfafc12c.png)
+
 
 Результат:
 
