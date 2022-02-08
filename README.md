@@ -9,7 +9,8 @@
 
 Результат:
 
-![image](https://user-images.githubusercontent.com/91615532/152966874-22fd503e-719a-4cdf-95b1-5efb1e108166.png)
+![BigMap](https://user-images.githubusercontent.com/91615532/152966986-81112a41-ca06-4f64-953e-5f9dfd2d8edc.png)
+
 
 
 
