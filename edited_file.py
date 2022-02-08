@@ -1,18 +1,21 @@
-# import folium
-# map = folium.Map(tiles="Stamen Terrain",
-# location=[49.817545, 24.023932], zoom_start=17)
-# map.add_child(folium.Marker(location=[49.817545, 24.023932],popup="Хіба я тут!",icon=folium.Icon()))
-# map.save('Map_1.html')
+'''
+Module to edit big file with films
+'''
+
 import csv
 
 def read_file(path: str) -> list :
-    """ Return list of lines from file
+    """
+    Return list of lines from file
     """
     with open(path, 'r',encoding='utf-8',errors='ignore') as file:
         contain = file.readlines()
         split_words(contain)
 
 def split_words(contain):
+    '''
+    Edit lines to more appropriate and write it in file
+    '''
     new_doc = []
     with open('new_list.csv', 'w') as f:
         writer = csv.writer(f)
@@ -22,10 +25,8 @@ def split_words(contain):
 
                 name_and_year, another_info = splited_by_tab[0].split(' {')
                 name, year = name_and_year.split('" ')
-                # year = year.replace(')', '')
             else:
                 name, year = splited_by_tab[0].split('" ')
-                # year = year.replace(')', '')
             if splited_by_tab[-1].find('(') == -1:
                 place = splited_by_tab[-1]
             else:
@@ -34,7 +35,6 @@ def split_words(contain):
             place = place.replace('\n' , '')
             place = place.replace("'", '')
             writer.writerow((name, year, place))
-    # new_doc.append((name, year, place))
     return new_doc
 
 
